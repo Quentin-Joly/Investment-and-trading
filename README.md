@@ -78,7 +78,7 @@ I create bags of random data picked from the original data and train a model for
 #### Metrics
 For those models, I use the R² score metric to evaluate the similarity of the predictions with the test values.
 
-### Refinelent 
+### Refinement 
 First I only tried a LR model to try to predict the adjusted close values but the scores and predictions were too far from the test values. I improved the model by adding the KNN model and combined these 2 models with the bagging method to optimize the predictions with the LR model performing better with a low perdiction date and the KNN model perfoming better with a high predicted date.
 
 
