@@ -117,7 +117,7 @@ def bagging(df, forecasted_date):
         - a LR model if the forecast is <= 2
         - a knn model if the forecast is > 2
     The score is computed by comparing the average of the testing values and the predicted values of all bags
-    The bagging technique is used to have a better prediction performace, as well as the use of the LR model 
+    The bagging technique is used to have a better prediction performance, as well as the use of the LR model 
     for a forecast <= 2 and the knn model for a higher forecast
 
     INPUT :

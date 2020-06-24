@@ -125,8 +125,6 @@ def predict_new(df, train_duration, predicted_date, ticker, today):
     # convert train value
     start_train = transform_to_date(train_duration, 'train', today) - datetime.timedelta(predicted_date)
     
-    print('\n\nstrart train\n', start_train)
-    print('\n\npredicted date\n', predicted_date)
     # train model
     bags, score = predicator.main(df, today, start_train, predicted_date)
 
@@ -168,7 +166,6 @@ def low_high(df, score, vect):
         - df : dataframe of the lowest or highest value predicted
     '''
     df3 = df.copy()
-    print(score, np.abs(score))
     if vect == 'low':
         df3['Adj Close'] = df['Adj Close'] * np.abs(score)
     else:
